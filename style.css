@@ -1,45 +1,116 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <title>Treino Avançado - Corrida Motivacional</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-  <header class="avancado">
-    <h1>🏃‍♂️💨 Treino Avançado</h1>
-    <nav>
-      <a href="index.html">Início</a>
-      <a href="iniciante.html">Iniciante</a>
-      <a href="intermediario.html">Intermediário</a>
-      <a href="avancado.html" class="active">Avançado</a>
-    </nav>
-  </header>
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <main>
-    <section>
-      <h2>Plano Semanal Avançado</h2>
-      <p class="motivation">💡 Dica: Intensidade elevada exige foco, técnica e descanso adequado!</p>
-      <table>
-        <thead>
-          <tr><th>Dia</th><th>Treino Detalhado</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Segunda</td><td>Corrida intensa 40 min + 3x15 agachamento com salto + 3x40 seg prancha lateral<br>Motivação: "O corpo aguenta mais do que você imagina!"</td></tr>
-          <tr><td>Terça</td><td>Treino intervalado: 8x (2 min corrida intensa / 1 min corrida leve) + 3x10 burpees<br>Motivação: "Supere seus limites todos os dias!"</td></tr>
-          <tr><td>Quarta</td><td>Corrida leve 35 min + alongamento 10 min<br>Motivação: "Recuperação é a chave para evoluir mais rápido."</td></tr>
-          <tr><td>Quinta</td><td>Corrida moderada longa 50 min + 3x15 flexões + 3x20 agachamentos<br>Motivação: "Construindo força e resistência simultaneamente!"</td></tr>
-          <tr><td>Sexta</td><td>Treino de força avançado: 4x15 agachamentos, 4x12 flexões, 3x1 min prancha<br>Motivação: "Um corpo forte corre mais rápido e previne lesões!"</td></tr>
-          <tr><td>Sábado</td><td>Corrida longa intensa 60 min + alongamento 15 min<br>Motivação: "Você está mais rápido, mais forte, mais resistente!"</td></tr>
-          <tr><td>Domingo</td><td>Descanso ativo: caminhada 30 min ou yoga<br>Motivação: "Preparando corpo e mente para a semana que vem!"</td></tr>
-        </tbody>
-      </table>
-    </section>
-  </main>
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f7;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
-  <footer class="avancado">
-    <p>© 2026 Treinos de Corrida – Nível Avançado</p>
-  </footer>
-</body>
-</html>
+header {
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #e76f51;
+}
+
+/* Header gradiente por nível */
+header.iniciante { background: linear-gradient(135deg, #2a9d8f, #88d8d4); }
+header.intermediario { background: linear-gradient(135deg, #f4a261, #fcd5b4); }
+header.avancado { background: linear-gradient(135deg, #e63946, #f4a1a8); }
+
+main {
+  flex-grow: 1;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+h2 {
+  color: #264653;
+  margin-bottom: 15px;
+}
+
+.motivation {
+  font-style: italic;
+  color: #6c757d;
+  margin-bottom: 15px;
+}
+
+/* Cards de treino */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+  margin-bottom: 8px;
+  color: #264653;
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Cards coloridos por nível */
+.card.iniciante { background-color: #a8dadc; }
+.card.intermediario { background-color: #fcd5b4; }
+.card.avancado { background-color: #f4a1a8; }
+
+.card.iniciante:hover { box-shadow: 0 8px 20px rgba(42,157,143,0.4); }
+.card.intermediario:hover { box-shadow: 0 8px 20px rgba(244,162,97,0.4); }
+.card.avancado:hover { box-shadow: 0 8px 20px rgba(230,57,70,0.4); }
+
+/* Footer cores por nível */
+footer.iniciante { background-color: #2a9d8f; color: white; padding: 15px 0; text-align: center; font-weight: bold; }
+footer.intermediario { background-color: #f4a261; color: white; padding: 15px 0; text-align: center; font-weight: bold; }
+footer.avancado { background-color: #e63946; color: white; padding: 15px 0; text-align: center; font-weight: bold; }
+
+@media (max-width: 600px) {
+  nav a {
+    margin: 0 5px;
+    padding: 5px 8px;
+    font-size: 0.9rem;
+  }
+}

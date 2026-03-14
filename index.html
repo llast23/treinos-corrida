@@ -1,29 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Treinos de Corrida</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Treinos de Corrida - Plano Completo</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 <body>
-    <header>
-        <h1>Treinos de Corrida</h1>
-    </header>
-
+  <header>
+    <h1>Treinos de Corrida</h1>
     <nav>
-        <a href="iniciante.html">Iniciante</a>
-        <a href="intermediario.html">Intermediário</a>
-        <a href="avancado.html">Avançado</a>
+      <a href="index.html" class="active">Início</a>
+      <a href="iniciante.html">Iniciante</a>
+      <a href="intermediario.html">Intermediário</a>
+      <a href="avancado.html">Avançado</a>
     </nav>
+  </header>
 
-    <main>
-        <h2>Bem-vindo!</h2>
-        <p>Descubra treinos de corrida para todos os níveis e alcance seus objetivos!</p>
-        <img src="images/corrida1.jpg" alt="Imagem de corrida" class="motivacao">
-    </main>
+  <main>
+    <section class="intro">
+      <h2>Bem-vindo ao seu plano de corrida!</h2>
+      <p>
+        Aqui você encontra treinos semanais detalhados para cada nível. Escolha seu
+        estágio e comece hoje mesmo!
+      </p>
+      <img src="images/corrida_viva.jpg" alt="Pessoa correndo na natureza" />
+    </section>
 
-    <footer>
-        Site de treinos de corrida feito por você 🚀
-    </footer>
+    <section class="plano-geral">
+      <h2>Plano semanal geral</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Atividade</th>
+            <th>Duração</th>
+            <th>Objetivo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Segunda-feira</td>
+            <td>Corrida leve</td>
+            <td>30 min</td>
+            <td>Aquecer corpo e resistência</td>
+          </tr>
+          <tr>
+            <td>Terça-feira</td>
+            <td>Treino intervalado</td>
+            <td>25 min</td>
+            <td>Melhorar velocidade</td>
+          </tr>
+          <tr>
+            <td>Quarta-feira</td>
+            <td>Descanso ou caminhada leve</td>
+            <td>—</td>
+            <td>Recuperação</td>
+          </tr>
+          <tr>
+            <td>Quinta-feira</td>
+            <td>Corrida moderada</td>
+            <td>40 min</td>
+            <td>Resistência aeróbica</td>
+          </tr>
+          <tr>
+            <td>Sexta-feira</td>
+            <td>Treino de força (ex: agachamento, prancha)</td>
+            <td>30 min</td>
+            <td>Fortalecer músculos</td>
+          </tr>
+          <tr>
+            <td>Sábado</td>
+            <td>Corrida longa</td>
+            <td>60 min</td>
+            <td>Melhorar resistência</td>
+          </tr>
+          <tr>
+            <td>Domingo</td>
+            <td>Descanso ativo (caminhada, alongamento)</td>
+            <td>—</td>
+            <td>Recuperação ativa</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Treinos de Corrida. Desenvolvido por você!</p>
+  </footer>
 </body>
 </html>

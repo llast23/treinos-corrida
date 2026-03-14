@@ -1,39 +1,72 @@
 /* Reset básico */
 * { margin:0; padding:0; box-sizing:border-box; }
-body { font-family:'Arial',sans-serif; background-color:#f0f4f7; color:#333; min-height:100vh; display:flex; flex-direction:column; }
-header { padding:20px; text-align:center; color:white; }
+
+body {
+  font-family:'Arial',sans-serif;
+  background: linear-gradient(120deg, #e0f7fa, #c8e6c9);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding:20px;
+  text-align:center;
+  color:white;
+}
+
 header h1 { font-size:2rem; margin-bottom:10px; }
-nav a { color:white; text-decoration:none; margin:0 10px; padding:6px 12px; border-radius:6px; font-weight:bold; transition:background-color 0.3s ease; }
+
+nav a {
+  color:white;
+  text-decoration:none;
+  margin:0 10px;
+  padding:6px 12px;
+  border-radius:6px;
+  font-weight:bold;
+  transition:background-color 0.3s ease;
+}
+
 nav a:hover, nav a.active { background-color:#e76f51; }
 
 /* Header gradiente por nível */
-header.iniciante { background:linear-gradient(135deg,#2a9d8f,#88d8d4); }
-header.intermediario { background:linear-gradient(135deg,#f4a261,#fcd5b4); }
-header.avancado { background:linear-gradient(135deg,#e63946,#f4a1a8); }
+header.iniciante { background: linear-gradient(135deg,#00acc1,#26c6da); }
+header.intermediario { background: linear-gradient(135deg,#fb8c00,#ffb74d); }
+header.avancado { background: linear-gradient(135deg,#e91e63,#f06292); }
 
 main { flex-grow:1; max-width:900px; margin:30px auto; padding:20px; }
 h2 { color:#264653; margin-bottom:15px; }
-.motivation { font-style:italic; color:#6c757d; margin-bottom:15px; }
+.motivation { font-style:italic; color:#555; margin-bottom:15px; }
 
 /* Cards */
 .card-container { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:15px; }
-.card { border-radius:12px; padding:15px; box-shadow:0 4px 10px rgba(0,0,0,0.1); transition: transform 0.2s ease, box-shadow 0.2s ease; }
-.card:hover { transform:translateY(-5px); box-shadow:0 8px 20px rgba(0,0,0,0.2); }
-.card h3 { margin-bottom:8px; color:#264653; }
+
+.card {
+  border-radius:15px;
+  padding:20px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow:0 15px 25px rgba(0,0,0,0.35);
+}
+
+.card h3 { margin-bottom:10px; }
 .card p { font-size:0.95rem; line-height:1.4; }
 
-/* Cards coloridos */
-.card.iniciante { background-color:#a8dadc; }
-.card.intermediario { background-color:#fcd5b4; }
-.card.avancado { background-color:#f4a1a8; }
-
-.card.iniciante:hover { box-shadow:0 8px 20px rgba(42,157,143,0.4); }
-.card.intermediario:hover { box-shadow:0 8px 20px rgba(244,162,97,0.4); }
-.card.avancado:hover { box-shadow:0 8px 20px rgba(230,57,70,0.4); }
+/* Cores dos cards por nível */
+.card.iniciante { background-color:#4dd0e1; color:#fff; }
+.card.intermediario { background-color:#ffb74d; color:#333; }
+.card.avancado { background-color:#f06292; color:#fff; }
 
 /* Footer */
-footer.iniciante { background-color:#2a9d8f; color:white; padding:15px 0; text-align:center; font-weight:bold; }
-footer.intermediario { background-color:#f4a261; color:white; padding:15px 0; text-align:center; font-weight:bold; }
-footer.avancado { background-color:#e63946; color:white; padding:15px 0; text-align:center; font-weight:bold; }
+footer.iniciante { background-color:#00acc1; color:white; padding:15px 0; text-align:center; font-weight:bold; }
+footer.intermediario { background-color:#fb8c00; color:white; padding:15px 0; text-align:center; font-weight:bold; }
+footer.avancado { background-color:#e91e63; color:white; padding:15px 0; text-align:center; font-weight:bold; }
 
-@media (max-width:600px){ nav a{ margin:0 5px; padding:5px 8px; font-size:0.9rem; } }
+@media (max-width:600px){
+  nav a{ margin:0 5px; padding:5px 8px; font-size:0.9rem; }
+}

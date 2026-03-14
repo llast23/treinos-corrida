@@ -1,99 +1,96 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Treino Avançado - Corrida Motivacional</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header>
+    <h1>Treino Avançado</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="iniciante.html">Iniciante</a>
+      <a href="intermediario.html">Intermediário</a>
+      <a href="avancado.html" class="active">Avançado</a>
+    </nav>
+  </header>
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f4f7;
-  color: #333;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+  <main>
+    <section>
+      <h2>Plano Semanal Avançado</h2>
+      <p class="motivation">💡 Dica: Intensidade elevada exige foco, técnica e descanso adequado!</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Dia</th>
+            <th>Treino Detalhado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Segunda</td>
+            <td>
+              Corrida intensa 40 min<br>
+              Séries de agachamento com salto: 3x15<br>
+              Séries de prancha lateral: 3x40 seg cada lado<br>
+              Motivação: "O corpo aguenta mais do que você imagina!"
+            </td>
+          </tr>
+          <tr>
+            <td>Terça</td>
+            <td>
+              Treino intervalado avançado: 8x (2 min corrida intensa / 1 min corrida leve)<br>
+              Séries de burpees: 3x10<br>
+              Motivação: "Supere seus limites todos os dias!"
+            </td>
+          </tr>
+          <tr>
+            <td>Quarta</td>
+            <td>
+              Corrida leve 35 min + alongamento 10 min<br>
+              Motivação: "Recuperação é a chave para evoluir mais rápido."
+            </td>
+          </tr>
+          <tr>
+            <td>Quinta</td>
+            <td>
+              Corrida moderada longa 50 min<br>
+              Séries de flexões: 3x15<br>
+              Séries de agachamento: 3x20<br>
+              Motivação: "Construindo força e resistência simultaneamente!"
+            </td>
+          </tr>
+          <tr>
+            <td>Sexta</td>
+            <td>
+              Treino de força avançado: 4x15 agachamentos, 4x12 flexões, 3x1 min prancha<br>
+              Motivação: "Um corpo forte corre mais rápido e previne lesões!"
+            </td>
+          </tr>
+          <tr>
+            <td>Sábado</td>
+            <td>
+              Corrida longa intensa 60 min<br>
+              Alongamento completo 10-15 min<br>
+              Motivação: "Você está mais rápido, mais forte, mais resistente!"
+            </td>
+          </tr>
+          <tr>
+            <td>Domingo</td>
+            <td>
+              Descanso ativo: caminhada 30 min, yoga ou alongamento<br>
+              Motivação: "Preparando corpo e mente para a semana que vem!"
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
 
-header {
-  background-color: #2a9d8f;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-weight: bold;
-}
-
-nav a:hover,
-nav a.active {
-  background-color: #e76f51;
-}
-
-main {
-  flex-grow: 1;
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-h2 {
-  color: #264653;
-  margin-bottom: 15px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
-}
-
-table th,
-table td {
-  padding: 10px;
-  border: 1px solid #ddd;
-  text-align: left;
-}
-
-table th {
-  background-color: #2a9d8f;
-  color: white;
-}
-
-table tr:hover {
-  background-color: #f1f1f1;
-}
-
-footer {
-  background-color: #264653;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  margin-top: 20px;
-}
-
-@media (max-width: 600px) {
-  nav a {
-    margin: 0 5px;
-    padding: 5px 8px;
-    font-size: 0.9rem;
-  }
-  table th,
-  table td {
-    font-size: 0.9rem;
-    padding: 6px;
-  }
-}
+  <footer>
+    <p>© 2026 Treinos de Corrida – Nível Avançado</p>
+  </footer>
+</body>
+</html>
